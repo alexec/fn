@@ -51,3 +51,6 @@ the key `name` is should not be the same as the value `"name"`. They should have
 
 Good ideas that could be pilfered:
 * Content addressable code from unison: https://www.unison-lang.org/learn/the-big-idea/
+
+Dumb questions:
+* Do you need classes for anything other than state machines?
