@@ -8,6 +8,7 @@ Maybe easier to say what we hate about different languages, than what we love:
 * Formatting code. I don't care about opinions.
 * Verbosity. Long words used when short words would be fine. My screen is only so big.
 * Keyboard acrobatics. Code that looks like math. Syntax more like Ruby than C++.
+* Exception handling. Not try/catch or magic numbers.
 
 * Tools (especially compilers and type systems) that put barriers in the way of me solving my problem
   * I should be able to compile and run a tiny bit of my program to find out if it works without refactoring the whole codebase, and only when it works should I need to care about all the places that I need to fix
@@ -56,4 +57,4 @@ Good ideas that could be pilfered:
 * Common lisp condition system for error handling?
 
 Dumb questions:
-* Do you need classes for anything other than state machines?
+* Do you need classes for anything other than state machines? Can we avoid "classes" altogether?
