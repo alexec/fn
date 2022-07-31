@@ -48,9 +48,12 @@ the key `name` is should not be the same as the value `"name"`. They should have
   * library fetching
   * versioning
   * identifying breaking changes
+* Tail call optimization
 
 Good ideas that could be pilfered:
 * Content addressable code from unison: https://www.unison-lang.org/learn/the-big-idea/
+* Commas are whitespace
+* Common lisp condition system for error handling?
 
 Dumb questions:
 * Do you need classes for anything other than state machines?
