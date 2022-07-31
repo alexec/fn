@@ -48,3 +48,6 @@ the key `name` is should not be the same as the value `"name"`. They should have
   * library fetching
   * versioning
   * identifying breaking changes
+
+Good ideas that could be pilfered:
+* Content addressable code from unison: https://www.unison-lang.org/learn/the-big-idea/
