@@ -19,6 +19,11 @@ Maybe easier to say what we hate about different languages, than what we love:
       * Perl
 * Significant whitespace
   * This breaks in too many situations. Eg. copy/paste, email
+* async/await
+  * This is the lowest common denominator of async programming
+  * Better options include
+    * CSP + transducers
+    * first class continuations
   
 Things that need to be supported:
 * Literal data structures (at least maps, vectors/arrays, numbers, strings, nouns, verbs ... maybe sets, queues, stacks?)
@@ -43,6 +48,9 @@ the key `name` is should not be the same as the value `"name"`. They should have
 * monoidal operations on each of the collection types (identity value + operation)
   * need to have a meaningful algebra for combining data
 * collections lib should be built around transducers (for optional lazy evaluation)
+  * collections should be persistent functional data structures a la Bagwell/Hickey
+    * https://docs.rs/im/latest/im/
+    * https://github.com/orium/rpds
 * mulitple dispatch
   * predicate dispatch?
 * module system
@@ -58,3 +66,4 @@ Good ideas that could be pilfered:
 
 Dumb questions:
 * Do you need classes for anything other than state machines? Can we avoid "classes" altogether?
+  * Yes ;P
