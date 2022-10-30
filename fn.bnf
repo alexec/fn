@@ -1,0 +1,39 @@
+<file> ::= <func>*
+<sp> ::= " "
+<bool> ::= "true" | "false"
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<int> ::= <digit>+
+
+<letter>::=<lower>|<upper>
+
+<char> ::= " " | <digit> | <letter>
+
+<string> ::= "\"" <char>* "\""
+
+<key_value> ::= <id> ": " <expr> "\n"
+<object> ::= "{\n" <key_value>* "}"
+
+<array_item> ::= <expr> "\n"
+<array> ::= "[\n" <array_item>* "]"
+
+<literal> ::= <bool> | <int> | <string> | <object> | <array>
+
+<id> ::= <lower> ( <upper> <lower> )*
+<bi_operator> ::= "==" | "+" | "-" | "*" | "/" | "<" | ">" | "!=" | "<=" | ">="
+<bi_operation> ::= <expr> <sp> <bi_operator> <sp> <expr>
+<expr> ::= <id> | <literal> | <bi_operation>
+
+<valdef> ::=  "val" <sp> <id> <sp> "=" <sp> <expr> "\n"
+<return_stmt> ::= "return" <sp> <expr> "\n"
+
+<else> ::= "else" <block>
+<if_stmt> ::= "if" <sp> <expr> <sp> <block> <else>?
+
+<for_loop> ::= "for" <sp> <id> <sp> "=" <sp> <expr> ";" <sp> <expr> ";" <sp> <expr> <sp> <block>
+
+<stmt> ::= <valdef> | <if_stmt> | <return_stmt> | <for_loop>
+<stmts> ::= <stmt>*
+<block> ::= "{\n" <stmts> "}\n"
+
+<func> ::= "fn " <id> " " <block>
+
